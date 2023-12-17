@@ -1,0 +1,23 @@
+.textarea-wrapper {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.808);
+    padding: 15px;
+}
+
+.copy{
+    text-align: right;
+    padding: 15px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.808);
+}
