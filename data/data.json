@@ -1,0 +1,35 @@
+{
+    "cars":[
+        {
+            "id":1,
+            "name":"Matiz",
+            "year":2012
+        },
+        {
+            "id":2,
+            "name":"Matiz",
+            "year":2010
+        },{
+            "id":3,
+            "name":"Matiz",
+            "year":2013
+        }
+    ],
+
+    "animals":[
+        {
+            "id":4,
+            "name":"capybara",
+            "year":2008
+        },
+        {
+            "id":5,
+            "name":"mushuk",
+            "year":2006
+        },{
+            "id":6,
+            "name":"maymun",
+            "year":2007
+        }
+    ]
+}
