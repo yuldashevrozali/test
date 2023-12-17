@@ -15,7 +15,7 @@ function App() {
   }, [data]) 
   return (
     <>
-      <h1>fuck</h1>
+      
     </>
   )
 }
