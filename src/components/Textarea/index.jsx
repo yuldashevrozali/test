@@ -2,7 +2,7 @@ import './index.css';
 import { FaRegCopy } from 'react-icons/fa';
 
 export default function Textarea(props) {
-  const
+  const { placeholder, isDisabled, inputRef } = props;
   function handleCopy() {
     const textarea = document.querySelector('.textarea');
     if (textarea) {
@@ -12,11 +12,23 @@ export default function Textarea(props) {
   }
 
   return (
-    <div className='textarea-wrapper'>
-      <textarea className="textarea" name="" id="" cols="30" rows="10"></textarea>
-      <div className='copy'>
-        <FaRegCopy onClick={handleCopy} />
-      </div>
+    <div className='textarea-wrapper' style={isDisabled ? { backgroundColor: 'lightgray' } : { backgroundColor: 'white' }}>
+      <textarea
+        className="textarea"
+        ref = {inputRef}
+        placeholder={placeholder}
+        style={isDisabled ? { backgroundColor: 'lightgray' } : { backgroundColor: 'white' }}
+        disabled={isDisabled ? true : false}
+        cols="30"
+        rows="10">
+
+      </textarea>
+      {
+        isDisabled && (<div className='copy'>
+          <FaRegCopy onClick={handleCopy} />
+        </div>)
+      }
+
     </div>
   );
 }
